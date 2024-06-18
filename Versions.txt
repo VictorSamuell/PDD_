@@ -1,0 +1,5 @@
+//python-version:3.6.8
+//tensorflow-version:1.13.1
+//pip-install:scipy
+
+algumas versões que utilizei, e que funcionou.
