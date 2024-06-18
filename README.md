@@ -1,4 +1,4 @@
-# Plant Disease Detection
+# PDD - Plant Disease Detection
 
 ## Dataset
 
