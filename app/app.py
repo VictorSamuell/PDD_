@@ -46,7 +46,7 @@ def predict_image(img_path):
     img_array = np.expand_dims(img_array, axis=0) / 255.0
     prediction = model.predict(img_array)
     class_idx = np.argmax(prediction, axis=1)
-    class_labels = {0: 'Folha Saudavel', 1: 'Strawberry__Leaf_scorch'}
+    class_labels = {0: 'Folha Saudavel', 1: 'Folha Doente'}
     return class_labels[class_idx[0]]
 
 @app.route('/', methods=['GET', 'POST'])
