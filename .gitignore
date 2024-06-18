@@ -1,0 +1,15 @@
+# Python
+*.pyc
+__pycache__/
+
+# Virtual Environment
+env/
+
+# Data
+data/plantvillage/PlantVillage/
+
+# Models
+models/*.h5
+
+# Jupyter Notebooks
+.ipynb_checkpoints
