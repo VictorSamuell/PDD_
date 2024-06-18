@@ -19,3 +19,36 @@ Extraia o conteúdo para o diretório `data/plantvillage/PlantVillage/`.
     source env/bin/activate  # Para Windows: .\env\Scripts\activate
 
 .\env\Scripts\Activate.ps1 no Powershell ( geralmente é oque eu uso )
+
+2. Instale as dependências:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Treinar o Modelo
+
+```bash
+python scripts/train_model.py
+
+
+
+-------------------------------------------
+Criar e ativar o ambiente virtual ( Virtual Enviroment )
+python -m venv env
+
+(Linux ou MAC)
+source env/bin/activate
+
+(Windows) 
+.\env\Scripts\activate
+.\env\Scripts\Activate.ps1
+
+para instalar as dependencias
+pip install -r requirements.txt
+
+para treinar o Modelo
+python scripts/train_model.py
+
+Executar a aplicação flask:
+python app/app.py
