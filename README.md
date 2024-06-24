@@ -4,7 +4,7 @@
 
 Este projeto utiliza o dataset PlantVillage. Para baixar o dataset, siga o link abaixo:
 
-[Baixar Dataset](https://www.kaggle.com/datasets/mohitsingh1804/plantvillage)
+[Baixar Dataset] (https://www.kaggle.com/datasets/mohitsingh1804/plantvillage)
 
 Extraia o conteúdo para o diretório `data/plantvillage/PlantVillage/`.
 
