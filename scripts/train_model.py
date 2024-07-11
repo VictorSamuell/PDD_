@@ -1,10 +1,7 @@
 # import tensorflow as tf
 # from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
 # dataset_path = 'data/plantvillage'
-
 # datagen = ImageDataGenerator(rescale=1./255, validation_split=0.2)
-
 # train_gen = datagen.flow_from_directory(
 #     dataset_path,
 #     target_size=(256, 256),
