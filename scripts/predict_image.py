@@ -1,12 +1,9 @@
 # from tensorflow.keras.models import load_model
 # from tensorflow.keras.preprocessing import image
 # import numpy as np
-
 # model = load_model('models/plant_disease_model.h5')
-
 # # Dicionário para mapeamento das classes
 # classes = {0: 'Healthy', 1: 'Leaf Scorch'}
-
 # def predict_image(img_path):
 #     img = image.load_img(img_path, target_size=(256, 256))
 #     img_array = image.img_to_array(img)
@@ -14,7 +11,6 @@
 #     prediction = model.predict(img_array)
 #     class_idx = int(prediction[0] > 0.5)
 #     return classes[class_idx]
-
 # if __name__ == "__main__":
 #     img_path = 'path/to/test_image.jpg'
 #     predicted_class = predict_image(img_path)
