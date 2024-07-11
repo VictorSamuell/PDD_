@@ -49,7 +49,7 @@ if __name__ == "__main__":
     if not os.path.exists(test_image_path):
         raise FileNotFoundError(f"A imagem de teste não foi encontrada: {test_image_path}")
     
-    # Fazer a previsão e imprimir o resultado
+    # fazendo a previsao com a imagem de teste
     predicted_class = predict_image(test_image_path)
     print(f'Predicted Class: {predicted_class}')
     
