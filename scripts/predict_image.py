@@ -21,30 +21,31 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 import os
 
-# Carregar o modelo treinado
+# Carregando o modelo
 model = load_model('models/plant_disease_model.h5')
 
-# Função para prever a classe de uma imagem
+
 def predict_image(img_path):
-    # Carregar e preprocessar a imagem
+    
     img = image.load_img(img_path, target_size=(256, 256))
     img_array = image.img_to_array(img)
     img_array = np.expand_dims(img_array, axis=0) / 255.0
     
-    # Fazer a previsão
+    # previsao
     prediction = model.predict(img_array)
     class_idx = np.argmax(prediction, axis=1)
     
-    # Mapear índices para classes
+    # indices para classes
     class_labels = {0: 'Strawberry__Healthy', 1: 'Strawberry__Leaf_scorch'}
     return class_labels[class_idx[0]]
 
-# Script principal
+
 if __name__ == "__main__":
-    # Defina o caminho correto para a sua imagem de teste
-    test_image_path = 'data\plantvillage\Strawberry___Leaf_scorch\0a08af15-adfe-447c-8ed4-17ed2702d810___RS_L.Scorch 0054.JPG'  # Substitua pelo caminho real
+
+    # imagem para teste
+    test_image_path = 'data\plantvillage\Strawberry___Leaf_scorch\0a08af15-adfe-447c-8ed4-17ed2702d810___RS_L.Scorch 0054.JPG'  
     
-    # Verifique se o caminho da imagem existe
+    
     if not os.path.exists(test_image_path):
         raise FileNotFoundError(f"A imagem de teste não foi encontrada: {test_image_path}")
     
