@@ -42,7 +42,7 @@
 # print(f'Validation accuracy: {val_acc:.2f}')
 
 # model.save('models/plant_disease_model.h5')
-
+#
 
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
