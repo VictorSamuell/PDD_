@@ -15,7 +15,7 @@
 #     img_path = 'path/to/test_image.jpg'
 #     predicted_class = predict_image(img_path)
 #     print(f'Predicted Class: {predicted_class}')
-#
+
 
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
