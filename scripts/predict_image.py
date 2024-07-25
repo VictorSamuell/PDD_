@@ -17,6 +17,7 @@
 #     print(f'Predicted Class: {predicted_class}')
 
 
+
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
