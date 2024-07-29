@@ -16,10 +16,8 @@
 #     class_mode='categorical',
 #     subset='validation'
 # )
-
 # from tensorflow.keras.models import Sequential 
 # from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
-
 # model = Sequential([
 #     Conv2D(32, (3, 3), activation='relu', input_shape=(256, 256, 3)),
 #     MaxPooling2D(2, 2),
@@ -32,22 +30,17 @@
 #     Dropout(0.5),
 #     Dense(train_gen.num_classes, activation='softmax')
 # ])
-
 # model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-
 # history = model.fit(train_gen, epochs=25, validation_data=val_gen)
-
 # val_loss, val_acc = model.evaluate(val_gen)
 # print(f'Validation accuracy: {val_acc:.2f}')
-
 # model.save('models/plant_disease_model.h5')
 #
-
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import os
 
-# Define paths
+
 dataset_path = 'data/plantvillage'
 model_save_path = 'models/plant_disease_model.h5'
 
