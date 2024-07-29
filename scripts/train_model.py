@@ -44,7 +44,7 @@ import os
 dataset_path = 'data/plantvillage'
 model_save_path = 'models/plant_disease_model.h5'
 
-# Check if directories exist and contain images
+# Checando se os diretórios contem imagens
 classes = ['Strawberry___healthy', 'Strawberry___Leaf_scorch']
 for class_name in classes:
     class_path = os.path.join(dataset_path, class_name)
