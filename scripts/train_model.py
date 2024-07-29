@@ -80,7 +80,7 @@ val_gen = datagen.flow_from_directory(
     classes=classes
 )
 
-# Define the model
+
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 
@@ -97,7 +97,7 @@ model = Sequential([
     Dense(len(classes), activation='softmax')
 ])
 
-# Compile the model
+# compilando o modelo
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Train the model
