@@ -55,7 +55,6 @@ for class_name in classes:
         if not files:
             raise ValueError(f"No images found in directory {class_path}.")
 
-# Define ImageDataGenerator with data augmentation for training set
 datagen = ImageDataGenerator(
     rescale=1./255,
     validation_split=0.2  # 20% para validação
@@ -100,12 +99,12 @@ model = Sequential([
 # compilando o modelo
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
-# Train the model
+# treinando o modelo
 history = model.fit(train_gen, epochs=25, validation_data=val_gen)
 
-# Evaluate the model
+
 val_loss, val_acc = model.evaluate(val_gen)
 print(f'Validation accuracy: {val_acc:.2f}')
 
-# Save the model
+# salvando
 model.save(model_save_path)
