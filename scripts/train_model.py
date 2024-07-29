@@ -9,7 +9,6 @@
 #     class_mode='categorical',
 #     subset='training'
 # )
-
 # val_gen = datagen.flow_from_directory(
 #     dataset_path,
 #     target_size=(256, 256),
