@@ -57,7 +57,7 @@ for class_name in classes:
 
 datagen = ImageDataGenerator(
     rescale=1./255,
-    validation_split=0.2  # 20% para validação
+    validation_split=0.2 
 )
 
 # Create train and validation generators
