@@ -95,7 +95,6 @@ model = Sequential([
     Dropout(0.5),
     Dense(len(classes), activation='softmax')
 ])
-
 # compilando o modelo
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
