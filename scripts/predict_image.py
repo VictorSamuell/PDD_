@@ -13,8 +13,7 @@
 #     return classes[class_idx]
 # if __name__ == "__main__":
 #     img_path = 'path/to/test_image.jpg'
-#     predicted_class = predict_image(img_path)
-#     print(f'Predicted Class: {predicted_class}')
+#     predicted_class = predict_image(img_path)    print(f'Predicted Class: {predicted_class}')
 
 
 
