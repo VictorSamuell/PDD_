@@ -40,7 +40,6 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import os
 
-
 dataset_path = 'data/plantvillage'
 model_save_path = 'models/plant_disease_model.h5'
 
