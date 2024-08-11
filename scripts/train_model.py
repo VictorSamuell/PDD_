@@ -69,7 +69,6 @@ train_gen = datagen.flow_from_directory(
     subset='training',
     classes=classes
 )
-
 val_gen = datagen.flow_from_directory(
     dataset_path,
     target_size=(256, 256),
