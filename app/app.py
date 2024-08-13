@@ -1,5 +1,3 @@
-
-
 from flask import Flask, request, render_template
 from tensorflow.keras.models import load_model
 import numpy as np
