@@ -3,7 +3,6 @@
 # import numpy as np
 # from tensorflow.keras.preprocessing import image
 # import os
-
 # app = Flask(__name__)
 # model = load_model('models/plant_disease_model.h5')
 
