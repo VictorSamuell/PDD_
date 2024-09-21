@@ -30,5 +30,6 @@ def index():
         prediction = predict_image(img_path)
     return render_template('index.html', prediction=prediction, filename=filename)
 
+
 if __name__ == '__main__':
     app.run(debug=True)
