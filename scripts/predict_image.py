@@ -27,4 +27,3 @@ if __name__ == "__main__":
     # fazendo a previsao com a imagem de teste
     predicted_class = predict_image(test_image_path)
     print(f'Predicted Class: {predicted_class}')
-    
