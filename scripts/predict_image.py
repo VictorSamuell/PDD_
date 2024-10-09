@@ -3,7 +3,6 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 import os
 
-# Carregando o modelo
 model = load_model('models/plant_disease_model.h5')
 
 def predict_image(img_path):
